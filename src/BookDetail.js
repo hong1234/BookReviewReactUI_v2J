@@ -14,8 +14,14 @@ const BookDetail = () => {
   const [showReviewForm, setShowReviewForm] = useState(false);
   
   const getBook = async () => {
+    const options = {
+      headers: { 
+        // 'Content-Type': 'application/json' 
+        'Accept':'application/json'
+      }
+    };
     try {
-      const res = await axios.get(`${bookUrl}${bookId}`)
+      const res = await axios.get(`${bookUrl}${bookId}`, options)
       // setBook(res.data.data); // php-api
       setBook(res.data); // java-api
       setLastId(bookId);

@@ -10,8 +10,14 @@ const SearchForm = ({ setBooks }) => {
   const navigate = useNavigate();
 
   const getData = async () => {
+    const options = {
+      headers: { 
+        // 'Content-Type': 'application/json' 
+        'Accept':'application/json'
+      }
+    };
     try {
-      const res = await axios.get(`${searchUrl}${filterText}`)
+      const res = await axios.get(`${searchUrl}${filterText}`, options)
       // setBooks(res.data.data);// php-api
       setBooks(res.data);// java-api
       setFilterText('');
