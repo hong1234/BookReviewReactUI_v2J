@@ -14,6 +14,10 @@ const SearchForm = ({ setBooks }) => {
       headers: { 
         // 'Content-Type': 'application/json' 
         'Accept':'application/json'
+      },
+      auth: {
+        username: 'admin',
+        password: 'admin'
       }
     };
     try {
