@@ -1,4 +1,4 @@
-"# hongBoilerplate4new webpack 5.x" 
+# hongBoilerplate4new webpack 5.x
 
 ## install
 
@@ -18,7 +18,7 @@ npm start
 
 npm run build
 
-// run prod UI-server
+## run prod UI-server
 
 php -S localhost:3000 -t build/
 
@@ -26,13 +26,23 @@ php -S localhost:3000 -t build/
 
 http://localhost:3000/
 
+
+# restful API
+
 ## install restful API project
 
 git clone https://github.com/hong1234/spring-boot3-mvc-jdbc-restApi.git
 
-// cd C:\HONG\JAVAtest\HONGfinal01\spring-boot3-mvc-jdbc-restApi
+or
+
+git clone https://github.com/hong1234/spring-boot3-mvc-jpa-restApi
+
 
 cd spring-boot3-mvc-jdbc-restApi
+
+or
+
+cd spring-boot3-mvc-jpa-restApi
 
 ## run API server
 
